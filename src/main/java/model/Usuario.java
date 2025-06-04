@@ -8,6 +8,7 @@ public class Usuario {
     private String email;
     private String faculdade;
     private String ra;
+    private String senha;
 
     public Usuario() {}
 
@@ -75,5 +76,13 @@ public class Usuario {
 
     public void setRa(String ra) {
         this.ra = ra;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 } 
