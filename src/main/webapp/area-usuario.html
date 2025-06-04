@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Usuário - Biblioteca Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .user-container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .user-info {
+            margin-bottom: 2rem;
+        }
+
+        .user-info h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .info-item {
+            padding: 1rem;
+            background: var(--light-gray);
+            border-radius: 5px;
+        }
+
+        .info-item label {
+            font-weight: bold;
+            color: var(--dark-gray);
+        }
+
+        .actions {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Biblioteca Online</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="logout.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="user-container">
+            <div class="user-info">
+                <h2>Informações do Usuário</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Nome:</label>
+                        <p id="nome-usuario"></p>
+                    </div>
+                    <div class="info-item">
+                        <label>E-mail:</label>
+                        <p id="email-usuario"></p>
+                    </div>
+                    <div class="info-item">
+                        <label>CPF:</label>
+                        <p id="cpf-usuario"></p>
+                    </div>
+                    <div class="info-item">
+                        <label>RG:</label>
+                        <p id="rg-usuario"></p>
+                    </div>
+                    <div class="info-item">
+                        <label>Faculdade:</label>
+                        <p id="faculdade-usuario"></p>
+                    </div>
+                    <div class="info-item">
+                        <label>RA:</label>
+                        <p id="ra-usuario"></p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-primary" onclick="editarPerfil()">Editar Perfil</button>
+                    <button class="btn btn-secondary" onclick="verHistorico()">Histórico de Empréstimos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Funções para carregar e exibir dados do usuário
+        function carregarDadosUsuario() {
+            // Aqui você implementará a lógica para buscar os dados do usuário logado
+            // e preencher os campos do perfil
+        }
+
+        function editarPerfil() {
+            // Implementar redirecionamento para página de edição de perfil
+            window.location.href = "editar-perfil.html";
+        }
+
+        function verHistorico() {
+            // Implementar redirecionamento para página de histórico
+            window.location.href = "historico-emprestimos.html";
+        }
+
+        // Carregar dados ao iniciar a página
+        document.addEventListener('DOMContentLoaded', carregarDadosUsuario);
+    </script>
+</body>
+</html> 
