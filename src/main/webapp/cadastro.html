@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Biblioteca Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Biblioteca Online</a></h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Cadastro</h2>
+            <form class="auth-form" action="cadastro" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                </div>
+                <div class="form-group">
+                    <label for="rg">RG</label>
+                    <input type="text" id="rg" name="rg" placeholder="Digite seu RG" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="faculdade">Faculdade</label>
+                    <select id="faculdade" name="faculdade" required>
+                        <option value="">Selecione sua faculdade</option>
+                        <option value="usp">USP - Universidade de São Paulo</option>
+                        <option value="unicamp">UNICAMP - Universidade Estadual de Campinas</option>
+                        <option value="unesp">UNESP - Universidade Estadual Paulista</option>
+                        <option value="unifesp">UNIFESP - Universidade Federal de São Paulo</option>
+                        <option value="puc">PUC-SP - Pontifícia Universidade Católica</option>
+                        <option value="mackenzie">Mackenzie - Universidade Presbiteriana</option>
+                        <option value="fmu">FMU - Faculdades Metropolitanas Unidas</option>
+                        <option value="uninove">UNINOVE - Universidade Nove de Julho</option>
+                        <option value="unip">UNIP - Universidade Paulista</option>
+                        <option value="sao_camilo">São Camilo - Centro Universitário</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ra">RA (Registro Acadêmico)</label>
+                    <input type="text" id="ra" name="ra" placeholder="Digite seu RA" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e aceito os <a href="termos.html">termos de uso</a></label>
+                </div>
+                <button type="submit" class="btn-primary">Cadastrar</button>
+            </form>
+            <div class="auth-links">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Biblioteca Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+</html> 

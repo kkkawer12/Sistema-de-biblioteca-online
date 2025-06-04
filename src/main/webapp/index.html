@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online - Saúde e Bem-estar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Biblioteca Online</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="cadastro.html" class="btn-cadastro">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Sua biblioteca digital de saúde e bem-estar</h2>
+                <p>Acesse gratuitamente uma vasta coleção de livros sobre saúde alimentar, psicologia e bem-estar.</p>
+                <a href="cadastro.html" class="btn-primary">Comece Agora</a>
+            </div>
+        </section>
+
+        <section id="categorias" class="categories">
+            <h2>Nossas Categorias</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Saúde Alimentar</h3>
+                    <p>Descubra como uma alimentação saudável pode transformar sua vida.</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Psicologia</h3>
+                    <p>Entenda melhor sua mente e desenvolva seu bem-estar emocional.</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Bem-estar</h3>
+                    <p>Aprenda práticas para uma vida mais equilibrada e saudável.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="livros" class="books">
+            <h2>Livros em Destaque</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="images/livro1.jpg" alt="Nutrição Funcional">
+                        <div class="book-overlay">
+                            <a href="#" class="btn-primary">Emprestar</a>
+                        </div>
+                    </div>
+                    <h3>Nutrição Funcional</h3>
+                    <p class="author">Dr. Maria Silva</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(128 avaliações)</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="images/livro2.jpg" alt="Psicologia Cognitiva">
+                        <div class="book-overlay">
+                            <a href="#" class="btn-primary">Emprestar</a>
+                        </div>
+                    </div>
+                    <h3>Psicologia Cognitiva</h3>
+                    <p class="author">Dr. João Santos</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(95 avaliações)</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="images/livro3.jpg" alt="Meditação e Mindfulness">
+                        <div class="book-overlay">
+                            <a href="#" class="btn-primary">Emprestar</a>
+                        </div>
+                    </div>
+                    <h3>Meditação e Mindfulness</h3>
+                    <p class="author">Ana Oliveira</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(156 avaliações)</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="images/livro4.jpg" alt="Anatomia Humana">
+                        <div class="book-overlay">
+                            <a href="#" class="btn-primary">Emprestar</a>
+                        </div>
+                    </div>
+                    <h3>Anatomia Humana</h3>
+                    <p class="author">Dr. Carlos Lima</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(203 avaliações)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="books-footer">
+                <a href="#" class="btn-primary">Ver Todos os Livros</a>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="how-it-works">
+            <h2>Como Funciona</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Cadastre-se</h3>
+                    <p>Crie sua conta gratuitamente usando CPF e RG.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Escolha seu Livro</h3>
+                    <p>Navegue pelo catálogo e encontre o livro ideal.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Faça o Empréstimo</h3>
+                    <p>Receba o livro por e-mail e comece a ler.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Avalie e Compartilhe</h3>
+                    <p>Deixe sua opinião e ajude outros leitores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <h2>Sobre o Projeto</h2>
+            <div class="about-content">
+                <p>A Biblioteca Online é uma iniciativa que visa democratizar o acesso ao conhecimento sobre saúde e bem-estar. Nossa missão é proporcionar conteúdo de qualidade gratuitamente, contribuindo para uma sociedade mais saudável e consciente.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Livros Disponíveis</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5000+</h3>
+                        <p>Usuários Ativos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10000+</h3>
+                        <p>Empréstimos Realizados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Biblioteca Online</h3>
+                <p>Conhecimento acessível para todos.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="termos.html">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@biblioteca.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 1234-5678</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Biblioteca Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html> 
