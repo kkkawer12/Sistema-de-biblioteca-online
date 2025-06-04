@@ -43,12 +43,6 @@ function validarEmail(email) {
     return re.test(email);
 }
 
-// Função para validar RA
-function validarRA(ra) {
-    ra = ra.replace(/\D/g, '');
-    return ra.length >= 5 && ra.length <= 12;
-}
-
 // Função para formatar CPF
 function formatarCPF(cpf) {
     return cpf.replace(/\D/g, '')
@@ -63,13 +57,6 @@ function formatarRG(rg) {
              .replace(/(\d{2})(\d)/, '$1.$2')
              .replace(/(\d{3})(\d)/, '$1.$2')
              .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-}
-
-// Função para formatar RA
-function formatarRA(ra) {
-    return ra.replace(/\D/g, '')
-             .replace(/(\d{2})(\d)/, '$1.$2')
-             .replace(/(\d{3})(\d)/, '$1.$2');
 }
 
 // Configuração dos formulários
@@ -90,14 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Máscara para RA
-    const raInput = document.querySelector('input[name="ra"]');
-    if (raInput) {
-        raInput.addEventListener('input', function() {
-            this.value = formatarRA(this.value);
-        });
-    }
-
     // Validação do formulário de cadastro
     const formCadastro = document.querySelector('form[action="cadastro"]');
     if (formCadastro) {
@@ -108,8 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const cpf = this.querySelector('#cpf').value;
             const rg = this.querySelector('#rg').value;
             const email = this.querySelector('#email').value;
-            const faculdade = this.querySelector('#faculdade').value;
-            const ra = this.querySelector('#ra').value;
             const termos = this.querySelector('#termos').checked;
 
             let isValid = true;
@@ -136,18 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Validação do e-mail
             if (!validarEmail(email)) {
                 mensagem += 'E-mail inválido\n';
-                isValid = false;
-            }
-
-            // Validação da faculdade
-            if (!faculdade) {
-                mensagem += 'Selecione uma faculdade\n';
-                isValid = false;
-            }
-
-            // Validação do RA
-            if (!validarRA(ra)) {
-                mensagem += 'RA inválido\n';
                 isValid = false;
             }
 
