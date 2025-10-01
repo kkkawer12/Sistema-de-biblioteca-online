@@ -16,6 +16,7 @@ Sistema de biblioteca online gratuita com foco em livros de saúde alimentar, ps
 - Java 11 ou superior
 - MySQL 8.0 ou superior
 - Maven 3.6 ou superior
+<<<<<<< HEAD
 
 ## Configuração
 
@@ -81,3 +82,5 @@ O sistema utiliza as seguintes tabelas:
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
+=======
+>>>>>>> b473ecb50c0de5bfcd89ab23d4980bcdd1bcbede
